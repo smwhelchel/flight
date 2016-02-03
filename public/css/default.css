@@ -1,16 +1,5 @@
 div { font-family: 'Raleway', sans-serif; }
 
-.opacity {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-color: #243E7F;
-  opacity: .2;
-}
-
 #header {
   position: relative;
   width: 100%;
@@ -36,6 +25,29 @@ div { font-family: 'Raleway', sans-serif; }
   border: 10px #3C2582 solid;
 }
 
+#submit:hover {
+  background-color: #3C2582;
+  color: white;
+}
+
+#results-container {
+  height: 300px;
+  width: 100%;
+  background-color: #3C2582;
+}
+
+#results {
+  margin-top: 50px;
+  border: 10px #3B5491 solid;
+  text-align: center;
+  background-color: white;
+}
+
+#arrival,
+#departure {
+  padding-right: 10px;
+}
+
 label {
   padding-left: 10px;
 }
@@ -44,3 +56,15 @@ button {
   margin-left: 10px;
 }
 
+@media(max-width: 600px) {
+  #header {
+    height: 50%;
+  }
+  #logo {
+    width: 50%;
+    height: 50%;
+    margin-left: 80px;
+    margin-bottom: 50px;
+    margin-top: 75px;
+  }
+}
