@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Noto+Serif|Raleway' rel='stylesheet'>
+    <link rel="stylesheet" href="css/default.css">
+    <title> Flight-- A website for users who want to check flight stats.</title>
+  </head>
+  <body>
+    <div class="container" id="header">
+      <div class="opacity"></div>
+      <div class="row">
+        <div class="col-md-12">
+          <img src="images/Drawing.png" id="logo"> 
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="search-container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <form class="form-inline" id="form">
+            <div class="form-group">
+              <select class="form-control" id="what">
+                <option value="arr">Arrival</option>
+                <option value="dep">Departure</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="airline">Airline Code</label>
+              <input type="text" class="form-control" id="airline" placeholder="ex: aa" value="aa" size= "5px">
+            </div>
+            <div class="form-group">
+              <label for="flight">Flight Number</label>
+              <input type="text" class="form-control" id="flight" placeholder="ex: 002" value="660" size="5px"> 
+            </div>
+            <div class="form-group">
+              <label for="date">Flight Date</label>
+              <input type="text" class="form-control" id="date" placeholder="xxxx/x/x" value="2016/2/2" size="10px">
+            </div>
+            <div class="form-group">
+              <label for="airport">Airport Code</label>
+              <input type="text" class="form-control" id="airport" placeholder="ex: sna" value="sna" size="5px">
+            </div>
+            <button type="submit" class="btn btn-default" id="submit">Submit</button>
+          </form>
+      </div>
+      </div>
+    </div>
+    <div class="container-fluid hidden" id="results-container">
+      <div class="row">
+        <div class="col-md-12" id="results">
+        </div>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+</html>
+
