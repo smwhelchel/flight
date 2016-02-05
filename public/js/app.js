@@ -129,9 +129,10 @@ var data = document.getElementById('submit').addEventListener('click', function(
     actualArrival.textContent = 'Actual Arrival: ' + timeValue2 + ' ' + newArrivalDate;
     resultsDiv.appendChild(actualArrival);
 
-
   })
 })
+
+
 
 
 

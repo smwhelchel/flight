@@ -48,6 +48,18 @@ div { font-family: 'Raleway', sans-serif; }
   padding-right: 10px;
 }
 
+footer { background-color: #F2F2F0; }
+
+footer ul li {
+  display: inline-block;
+  padding: 10px;
+  float: right;
+  font-family: 'Raleway', sans-serif;
+}
+
+#footer-left { padding: 10px; }
+#footer-right { padding-top: 10px; }
+
 label {
   padding-left: 10px;
 }
@@ -68,3 +80,6 @@ button {
     margin-top: 75px;
   }
 }
+
+
+

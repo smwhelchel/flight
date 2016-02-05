@@ -3,7 +3,6 @@ var request = require('request');
 var bodyParser = require('body-parser');
 var textParser = bodyParser.json();
 var router = express.Router();
-var moment = require('moment');
 
 var baseUrl = 'https://api.flightstats.com/flex/flightstatus/rest/v2/json/flight/status/';
 
